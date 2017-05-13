@@ -18,7 +18,9 @@ Version 2.0 of the Build Butler is coming and it's going to be way more flexible
 	* iRobot Create
 	* Parrot AR Drone
 	* Additional RPi sensors (IR, SONAR, Altimeter, GPS, Accelerometer)
+	* Seeking recommendations for R2D2, BB-8, and Robot B-9 M-3 platforms as well!
 * Make better use of data
+	* Allow alert notifications from anomaly detection
 	* Use NiFi to pump data to Hadoop, Spark, etc.
 	* Send data to cloud for better GPU compute
 	* Build better models using the data and SOTA methods
