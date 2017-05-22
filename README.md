@@ -12,19 +12,19 @@ Version 2.0 of the Build Butler is coming and it's going to be way more flexible
 Nothing like that just woke up look!
 
 * Getting the video stream
-<img src="https://raw.githubusercontent.com/Shumakriss/build_butler-2.0/master/docs/images/video_consumer.png?raw=true">
+<img src="https://raw.githubusercontent.com/Shumakriss/build_butler-2.0/master/docs/images/video_consumer.png?raw=true"/>
 
 * Detect faces
-<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-highlighting.png?raw=true">
+<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-highlighting.png?raw=true"/>
 
 * Format faces for recognition
-<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-formatting.png?raw=true">
+<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-formatting.png?raw=true"/>
 
 * Put a name to the face
-<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-naming.png?raw=true">
+<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/face-naming.png?raw=true"/>
 
 * Get text from audio
-<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/speech-recognizing.png?raw=true">
+<img src="https://github.com/Shumakriss/build_butler-2.0/blob/master/docs/images/speech-recognizing.png?raw=true"/>
 
 
 ## Project Direction
@@ -45,3 +45,6 @@ Nothing like that just woke up look!
 	* Use NiFi to pump data to Hadoop, Spark, etc.
 	* Send data to cloud for better GPU compute
 	* Build better models using the data and SOTA methods
+
+## About the Author
+<img src="https://docs.google.com/drawings/d/1KkPa5rz64fCK_78Y1i78fHuhwYXlpkRyy178Y2TL1C8/pub?w=2020&amp;h=3561">
