@@ -3,8 +3,9 @@ from kafka import KafkaConsumer
 import cv2
 import numpy as np
 import time
+import constants
 
-consumer = KafkaConsumer('highlighted-faces', bootstrap_servers='newton:9092')
+consumer = KafkaConsumer('highlighted-faces', bootstrap_servers=constants.KAFKA_HOST)
 
 for msg in consumer:
 	nparr = np.fromstring(msg.value, np.uint8)

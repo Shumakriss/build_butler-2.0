@@ -1,13 +1,14 @@
 from kafka import KafkaProducer
 import time
 import speech_recognition as sr
+import constants
 
 r = sr.Recognizer()
 m = sr.Microphone()
 with m as source:
     r.adjust_for_ambient_noise(source)  # we only need to calibrate once, before we start listening
 
-producer = KafkaProducer(bootstrap_servers='newton:9092')
+producer = KafkaProducer(bootstrap_servers=constants.KAFKA_HOST)
 
 def callback(recognizer, audio):
 	print("Volume threshold reached, sending data")

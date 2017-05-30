@@ -1,9 +1,10 @@
 import cv2
 from kafka import KafkaProducer
 import time
+import constants
 
 video_capture = cv2.VideoCapture(0)
-producer = KafkaProducer(bootstrap_servers='newton:9092')
+producer = KafkaProducer(bootstrap_servers=constants.KAFKA_HOST)
 
 while True:
 	time.sleep(0.05)
