@@ -59,5 +59,5 @@ for msg in consumer:
 
 		eigenDistance = min(distances)[0]
 		found_ID = min(distances)[1]
-
-	producer.send('names', bytes(found_ID, 'utf-8'))
+	if(eigenDistance < 1.5):
+		producer.send('names', bytes(found_ID, 'utf-8'))
