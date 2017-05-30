@@ -5,8 +5,8 @@ function run {
 	echo $! >> .debug_pids
 }
 
-run formatted-face-consumer.py
+run video-consumer.py
 run highlighted-face-consumer.py
+run formatted-face-consumer.py
 run name-consumer.py
 run text-consumer.py
-run video-consumer.py

@@ -1,7 +1,7 @@
 import os, os.path
 
 KAFKA_HOST= os.environ['KAFKA_HOST'] + ':9092'
-CLASSIFIER_FILE="haarcascade_frontalface_default.xml"
+CLASSIFIER_FILE="../media/haarcascade_frontalface_default.xml"
 SCALE_FACTOR=1.1
 MIN_NEIGHBORS=5
 MIN_WIDTH=140
