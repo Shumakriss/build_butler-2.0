@@ -4,13 +4,14 @@ import time
 import timeout_decorator
 import json
 from pygame import mixer
+import constants
 
 mixer.init()
 mixer.music.load('ride_of_the_valkyries.mp3')
 
-jenkins = KafkaConsumer('jenkins-notifications', bootstrap_servers='newton:9092')
-names = KafkaConsumer('names', bootstrap_servers='newton:9092')
-text = KafkaConsumer('text', bootstrap_servers='newton:9092')
+jenkins = KafkaConsumer('jenkins-notifications', bootstrap_servers=constants.KAFKA_HOST)
+names = KafkaConsumer('names', bootstrap_servers=constants.KAFKA_HOST)
+text = KafkaConsumer('text', bootstrap_servers=constants.KAFKA_HOST)
 
 WAIT_JENK = "Waiting for Jenkins notification"
 RCV_JENK = "Received Jenkins notification"

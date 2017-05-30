@@ -19,8 +19,8 @@ def crop(x, y, w, h):
         y = y - (extra_height / 2)
     return int(x), int(y), int(w), int(h)
 
-consumer = KafkaConsumer('video', bootstrap_servers='newton:9092')
-producer = KafkaProducer(bootstrap_servers='newton:9092')
+consumer = KafkaConsumer('video', bootstrap_servers=constants.KAFKA_HOST)
+producer = KafkaProducer(bootstrap_servers=constants.KAFKA_HOST)
 
 cascPath = constants.CLASSIFIER_FILE
 faceCascade = cv2.CascadeClassifier(cascPath)

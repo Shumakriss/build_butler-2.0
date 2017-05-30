@@ -1,10 +1,11 @@
 from kafka import KafkaConsumer
 from kafka import KafkaProducer
 import speech_recognition as sr
+import constants
 
 r = sr.Recognizer()
-consumer = KafkaConsumer('audio', bootstrap_servers='newton:9092')
-producer = KafkaProducer(bootstrap_servers='newton:9092')
+consumer = KafkaConsumer('audio', bootstrap_servers=constants.KAFKA_HOST)
+producer = KafkaProducer(bootstrap_servers=constants.KAFKA_HOST)
 
 for msg in consumer:
 	try:

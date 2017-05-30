@@ -35,8 +35,8 @@ for x, folder in enumerate(folders):
 pca = RandomizedPCA(n_components=constants.NUM_EIGENFACES, whiten=True).fit(X)
 X_pca = pca.transform(X)
 
-consumer = KafkaConsumer('formatted-faces', bootstrap_servers='newton:9092')
-producer = KafkaProducer(bootstrap_servers='newton:9092')
+consumer = KafkaConsumer('formatted-faces', bootstrap_servers=constants.KAFKA_HOST)
+producer = KafkaProducer(bootstrap_servers=constants.KAFKA_HOST)
 
 for msg in consumer:
 	nparr = np.fromstring(msg.value, np.uint8)
