@@ -17,7 +17,7 @@ def ID_from_filename(filename):
     if(filename == None):
         raise "Must specify filename"
     part = filename.split('/')
-    return part[1]
+    return part[3]
 
 X = np.zeros([constants.NUM_TRAINIMAGES, constants.IMG_RES], dtype='int8')
 Y = []
