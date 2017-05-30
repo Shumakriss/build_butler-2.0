@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function run {
-	python ../$1 &> laptop.logs &
+	python ../kafka_clients/$1 &> laptop.logs &
 	echo $! >> .laptop_pids
 }
 

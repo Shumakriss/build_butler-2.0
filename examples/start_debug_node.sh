@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function run {
-	python ../$1 &> debug.logs
+	python ../kafka_clients/$1 &> debug.logs
 	echo $! >> .debug_pids
 }
 

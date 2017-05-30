@@ -3,6 +3,7 @@ Version 2.0 of the Build Butler is coming and it's going to be way more flexible
 
 ## Setup
 1. To get started, we use a basic, single-node Kafka setup using the [Quickstart](https://kafka.apache.org/quickstart)
+* Or use docker, but first export KAFKA_HOST=$(echo $DOCKER_HOST | sed 's/.*\/\///g' | sed 's/:.*//g')
 2. Since our consumers/producers are all on different hosts and we want a convenient way to access the broker, we override the listeners and advertised.listeners properties in config/server.properties (an example is checked into the repo).
 3. Also, a Dockerized Jenkins is used to kick off the search
 4. Lastly, spin up the various Python processes. You will need either laptop or RPI producers for both video and audio. You will need all of the files ending in "-processor.py" and any consumers you wish for debugging.

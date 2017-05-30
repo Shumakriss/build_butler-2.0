@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function run {
-	python ../$1 & &> rpi.logs
+	python ../kafka_clients/$1 & &> rpi.logs
 	echo $! >> .rpi_pids
 }
 
